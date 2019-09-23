@@ -1,0 +1,1 @@
+Doktorantūros studijų dalyko "Lygiagretieji ir paskirstytieji skaičiavimai" praktinės užduotys.
