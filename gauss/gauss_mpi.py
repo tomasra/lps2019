@@ -19,6 +19,7 @@ proc_id = comm.Get_rank()
 proc_count = comm.Get_size()
 MAIN_PROC = 0
 
+print(proc_id, ' starting')
 
 times = []
 for run_id in range(REPEATS):
@@ -100,6 +101,6 @@ for run_id in range(REPEATS):
 
 if proc_id == MAIN_PROC:
     # Save results
-    with open('gauss.csv', 'a') as fp:
+    with open('gauss_mpi.csv', 'a') as fp:
         writer = csv.writer(fp)
         writer.writerow([N, mode, proc_count, np.mean(times)])
